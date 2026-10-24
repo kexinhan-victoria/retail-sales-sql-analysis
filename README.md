@@ -9,6 +9,12 @@ Four business cases written in SQL (SQLite) on the public Olist dataset (about 1
 | 3 | [Peak period analysis](sql/03_peak_period_analysis.sql) | Which categories did Black Friday (Nov 2017) lift the most? | `CASE WHEN`, date filters, monthly average vs single month |
 | 4 | [Benchmark vs average](sql/04_benchmark_vs_average.sql) | Which states lag the national average on order value and delivery time? | Subqueries, `CASE WHEN`, `julianday`, order-level grain |
 
+## Results preview
+![Case 1: Top 5 states by MoM growth](results/01_state_monthly_growth.png)
+![Case 2: Category growth](results/02_category_growth_ranking.png)
+![Case 3: Peak period lift](results/03_peak_period_analysis.png)
+![Case 4: Benchmark vs average](results/04_benchmark_vs_average.png)
+
 ## Key findings
 - **Case 1:** July 2018 sales were flat (+1.7%) but the mix shifted. ES (+76%), PE (+66%) and GO (+44%) grew fast, while SP (-5%) and MG (-12%), about half of all sales, fell.
 - **Case 2:** Sales grew about 158% (Jan–Jul 2018 vs 2017). watches_gifts, health_beauty and housewares are large and beating the market. cool_stuff (+24%) is large but losing share.
